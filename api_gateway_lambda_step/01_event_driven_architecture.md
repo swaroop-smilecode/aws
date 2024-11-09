@@ -22,4 +22,4 @@ But, it still has below problem:
 Atleast one instance of `Processing tier` needs to exist, </br>
 because when there is a request comes from `Upload tier` to `processing tier`, what if the `processing tier` is in failed condition?</br> 
 there is no middle man to hold the request, until the `Upload tier` comes back to work again.</br>
-This is called `Asynchronous communication`, becasue `Processing tier` can't proceed further, unless it gets answer from `Upload tier`.
+This is called `Synchronous communication`, becasue `Processing tier` can't proceed further, unless it gets answer from `Upload tier`.
