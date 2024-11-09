@@ -1,0 +1,25 @@
+### Building Cattube
+Let's see different types of architectures through an example.
+How about building `Cattube`?
+![image](https://github.com/user-attachments/assets/498a8b9c-4005-4929-ad41-144eb29b4267)
+
+### Monolothic architecture
+One way is building through `Monolithic Architecture`. The problems associated with this architecture are:
+1. Fails together
+2. Scales together -- As entire hardware is built as single unit, you can scale it vertically, not horizantally.
+3. Bills together
+
+![image](https://github.com/user-attachments/assets/b7a69f76-a177-4475-b423-e50981209fed)
+
+### Tier architecture
+Components are separated, so that any one of the component can be scaled vertically independent of another.</br>
+![image](https://github.com/user-attachments/assets/311dcd26-c254-4b01-a627-96dd6a722bfd)
+
+But, components can't be scaled horizantally, because of the reason, who will communicate between multilpe components?</br>
+To make them scale Horizantally, let's improve the architecture as below.</br>
+![image](https://github.com/user-attachments/assets/ff807368-bcef-4503-bed6-9eb483130e70)
+But, it still has below problem:
+Atleast one instance of `Processing tier` needs to exist, </br>
+because when there is a request comes from `Upload tier` to `processing tier`, what if the `processing tier` is in failed condition?</br> 
+there is no middle man to hold the request, until the `Upload tier` comes back to work again.</br>
+This is called `Asynchronous communication`, becasue `Processing tier` can't proceed further, unless it gets answer from `Upload tier`.
