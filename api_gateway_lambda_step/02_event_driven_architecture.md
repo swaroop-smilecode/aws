@@ -1,4 +1,22 @@
 Let's keep evolving our architecture, this time with the help of `queue`.</br>
-Using `queue`, results in `decoupled architecture`.</br>
-In this case, `bob` uploads the video into `s3` bucket & `append's` an message to the queue.</br>
-With this `upload tier` work is done.</br>
+Using queue, results in decoupled architecture.</br>
+In this case, upload tier uploads the video into `s3` bucket & append's an message to the queue.</br>
+Note that this message will have information about how to fing the respective video present inside the s3 bucket.</br> 
+With this, we evolved from synchronous communication to asynchronous communication.</br>
+![image](https://github.com/user-attachments/assets/80b907be-1d18-4662-b5f5-547bef2c8813)
+On the other side of the queue, `Auto Scaling Group` is present which creates & destroys the processing servers</br>
+based on number of items present inside the queue.</br>
+The processing servers will `poll` the queue for messages & starts processing them.
+![image](https://github.com/user-attachments/assets/4cd84d9b-6b75-409b-a0c0-63bdb868279d)
+### Micro service architecture
+If you keep making all the components inside an system to communicate in asynchronous manner,</br>
+will end up with Micro service architecture.</br>
+In Micro services architecture terminology, those services which produce the messages are called `Producers`</br>
+those which consumes the messages are called `Consumers`.
+![image](https://github.com/user-attachments/assets/24559f47-9ad3-4db6-be2e-5444a788b5d6)
+If we go a step further & imrprove our architecture a bit more elegantly, then each micro service herself is an</br>
+self sufficient component with it's own logic works independently of any other component, it's own database.</br> 
+![image](https://github.com/user-attachments/assets/8f6aa4a7-2ce1-488f-a5c2-4164e138928f)
+When application grows & grows, the number of queues get increased which results in cumbersome architecture &</br>
+inorder to clean it up, will use `Event router`.
+![image](https://github.com/user-attachments/assets/12c148af-5118-47ed-91a3-fec3d85b9d1b)
