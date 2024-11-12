@@ -1,13 +1,13 @@
 Let's understand `create` operations through examples.
 
 ------------------------------------------------
-#### Creating node for Spiderman movie
+#### Create node for Spiderman movie
 ```python
 CREATE (m:Movie {title: 'Spiderman', released: 2010, duration: 148})
 RETURN m
 ```
 ------------------------------------------------
-#### Creating relationship between Spiderman movie node 
+#### Create relationship between Spiderman movie node 
 ```python
 CREATE (a:Actor {name: 'Tobey', age: 25}) # Create `Actor` node.
 WITH a                                    # Carry forward this `Actor` node as a variable to further query.
