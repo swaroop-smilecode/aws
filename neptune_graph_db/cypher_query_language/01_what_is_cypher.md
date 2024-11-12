@@ -1,11 +1,11 @@
 Will learn the cypher query language with the help of example commands.
 
-#### Retrieving all nodes of a particular type
+#### Retrieving all nodes of a particular label
 ```python
 MATCH (m:Movie)
 RETURN m
 ```
-#### Retrieving specific properties
+#### Retrieving specific properties of a node
 ```python
 MATCH (m:Movie)
 RETURN m.title, m.releaseYear
