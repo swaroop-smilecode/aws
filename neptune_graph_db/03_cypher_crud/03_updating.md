@@ -1,7 +1,7 @@
 Let's understand `update` operations through examples.
 
 ------------------------------------------------
-#### Update property of a node
+#### Update property of node
 ```python
 MATCH (m:Movie {title: "Spiderman"})
 SET m.duration = 150
