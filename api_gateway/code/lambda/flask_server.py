@@ -1,4 +1,5 @@
-from flask import Flask
+import awsgi
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
@@ -15,6 +16,9 @@ def prices():
 
 @app.route('/')
 def home():
-    return prices()
+    return jsonify(prices())
+
+def lambda_handler(event, context):
+    return awsgi.response(app, event, context, base64_content_types={"image/png"})
 
 app.run()
