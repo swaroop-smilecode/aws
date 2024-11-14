@@ -4,6 +4,3 @@ available in the internet, you need to do all the below things.</br>
 
 But, this is not the case with lambda
 ![image](https://github.com/user-attachments/assets/21dc64a6-fa51-4d63-8e21-a5a17d599e97)
-
-lambda will do heavy lifting(for example, spinning up as many servers based on the load) for you.
-![image](https://github.com/user-attachments/assets/b02e1dac-2670-4e43-b99b-cf68019a865d)
