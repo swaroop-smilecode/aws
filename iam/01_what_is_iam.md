@@ -17,3 +17,6 @@
 - Access management is achieved through IAM policy.
   Policy is nothing but set of permissions.</br>
   ![image](https://github.com/user-attachments/assets/3d4a4453-ef54-4edc-a38d-b4fa390ddb70)
+  <ins>Note</ins></br>
+  Policy can be either attached to IAM user / IAM group / IAM role / resources like EC2, s3 bucket etc. 
+  ![image](https://github.com/user-attachments/assets/b65133a0-1261-4dc8-9cbc-b2b6a86094fe)
