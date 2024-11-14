@@ -20,10 +20,15 @@ When you invoke an lambda function, it under goes 3 phases.
   anticipating some more requests. If any new requests come during this time, then they no need</br>
   to go through the cold start period once again.
   ![image](https://github.com/user-attachments/assets/feeb3686-bb33-4d2d-af55-eb003ca369d1)
-
+#### SHUTDOWN Phase
+After waiting for sometime, if lamda doesn't get any request, it's shutdown.
   
+#### <ins>Note 1</ins>
+An temporary disk memory of 512 MB is allocated for lambda function. Here you can store things like</br>
+images etc. which are needed for your logic.
+![image](https://github.com/user-attachments/assets/5ee99d7e-f04d-43f6-9b13-f2ca2979e4a9)
+#### <ins>Note 2</ins>
+When i say dependencies, it's nothing but `our code is depending on the libraries we import into our code`.
+![image](https://github.com/user-attachments/assets/8cd3d725-70f3-4049-bc51-ccad3fe0ef0e)
 
-
-  
-   
 
