@@ -2,8 +2,8 @@
 - iam also is an AWS service like any other AWS services.</br>
 - iam means identity & access management.</br>
 - The name itself is telling that this service is there to do 2 types of work.</br>
-1. `Identity`, means identifying the user.
-2. `Access management`, means providing/restricting access to identified user.
+  1. `Identity`, means identifying the user.
+  2. `Access management`, means providing/restricting access to identified user.
 - In other terminology, we have different names for Identity & Access management.</br>
   Identity = Authentication</br>
   Access management = Authorization</br>
@@ -11,8 +11,9 @@
   ID & Password of the root user are same as the ID & Password, which are used for AWS account creation.
 
 #### Types of Identity & Access management
-- There are 3 ways in which identity can be checked.
-  ![image](https://github.com/user-attachments/assets/c3883f88-5255-4b53-a17e-2f82c36b39fd)
+- Identification is done through IAM user / IAM group / IAM role.
+  ![image](https://github.com/user-attachments/assets/42a91296-90a3-4ef6-b3d6-d0fe7290716e)
 
-- There are 3 ways in which access management(through policies) can be done.
+- Access management is achieved through IAM policy.
+  Policy is nothing but set of permissions.</br>
   ![image](https://github.com/user-attachments/assets/3d4a4453-ef54-4edc-a38d-b4fa390ddb70)
