@@ -11,6 +11,9 @@
   Hence the name `Virtual Private Cloud`.
 ![image](https://github.com/user-attachments/assets/51544868-492a-462d-970d-5f0547407429)
 
+#### You need atleast 1 VPC
+Atleast one VPC is needed, because that's how your infrastructure can be isolated from other others.
+
 #### Components of VPC
 To fine grain your virtual private cloud, there are many components. They are
 1. CIDR block
