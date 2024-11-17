@@ -32,7 +32,7 @@ How would an end user enter your VPC? Through `Internet Gateway`</br>
 #### Route table
 - Once end user enters into VPC through internet gateway, where to divert him? To EC2 instance? To RDS instance ? </br>
   This divertion is done through route table.
-- Route table is associated with subnet. Subnet must have a route table.
+- Route table is associated with subnet. Subnet must have a route table(At max, only one).
 ![image](https://github.com/user-attachments/assets/de87d532-8753-41cf-b749-8dd7a13903bc)
 
 #### NACL(Network Access Security Group) & Security Group
