@@ -20,9 +20,11 @@
   ![image](https://github.com/user-attachments/assets/7510c729-4e33-47d0-9461-9f74f52443fa)
 
 #### Subnet's
-VPC = your own network in an geographic region.</br>
-Subnet = your own network inside availability zone.</br>
-Inside the subnet, will place our servers.</br>
+- VPC = your own network in an geographic region.</br>
+  Subnet = your own network inside availability zone.</br>
+- We need to assign CIDR blocks to subnets, but obviosuly these CIDR blocks range should be with in the VPC CIDR block range.</br>
+- Inside the subnet, will place our servers.</br>
+
 ![image](https://github.com/user-attachments/assets/ab8ae276-400c-4b32-ab1e-0a0ebf799888)
 
 #### Internet gateway
