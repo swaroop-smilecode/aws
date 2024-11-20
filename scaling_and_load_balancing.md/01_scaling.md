@@ -1,5 +1,5 @@
 #### What is scaling?
-Increasing/decreasing the hardware inproportaional to load.
+Increasing/decreasing the number of servers, in proportion to load.
 
 #### Can you do scaling on on-premise?
 Ofcourse, but you need to maintain some extra servers which are ideal when there is no huge load</br> 
