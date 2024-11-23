@@ -10,3 +10,10 @@ Name should be unique. No other AWS user should have created the bucket with sam
 #### Folder system
 You can store files inside the folder.
 ![image](https://github.com/user-attachments/assets/d571dcb3-f04c-45ee-bd15-c33614fc9a65)
+
+#### REST API
+The objects inside the s3 bucket are retreived through REST API call.</br>
+![image](https://github.com/user-attachments/assets/a2260849-cb64-4aa2-b015-24772ae2fce7)
+
+
+
