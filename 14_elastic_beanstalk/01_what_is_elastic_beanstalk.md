@@ -42,6 +42,7 @@ It's a Platform as a Service (PaaS)
 ![image](https://github.com/user-attachments/assets/d6d7c299-ebb3-4eb4-ac70-4075137aebca)
 
 <ins>Traffic splitting deployment policy</ins></br>
+<ins>Blue/Green deployment policy</ins></br>
 - Suitable for A/B or Canary testing.
 - Exisiting instances are not updated. Elastic Bean Stalk duplicates the current instances along with load balancer.</br>
 - Only to 10% of end users are diverted to new infrastructure. If everything is fine, then remaining 90% are also diverted & at the end,
