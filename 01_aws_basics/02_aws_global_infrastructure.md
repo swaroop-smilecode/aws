@@ -20,12 +20,3 @@ Availability zone is the term referred to bunch of data centers interconnected.<
 What if whole data center collapases?</br>
 That's where the region logical group saves you.</br>
 ![image](https://github.com/user-attachments/assets/9a1b7303-730a-4264-bef8-fb0976943365)
-
-<ins>2. Edge server/Point of presence:</ins></br>
-Let's consider the main server of your application is presnet in california.</br>
-& people from phillipines request particular data mostly.</br>
-Then, the data is cached at servers present near philippines, for faster service.</br>
-Those servers present in philippines are called as Edge servers/Point of presence.</br>
-![image](https://github.com/user-attachments/assets/df5e056d-7aff-47c4-901f-b51c1d1a3fcb)
-
-
