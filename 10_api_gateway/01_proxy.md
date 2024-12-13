@@ -7,3 +7,8 @@ Proxy means representation.
 #### Main functions of proxy
 1. Privacy
 2. Blocking requests to certain domains
+
+#### Forward & Reverse proxy
+Based on the location it is placed, you can call it forward proxy / reverse proxy. 
+![image](https://github.com/user-attachments/assets/0170eaa6-7bb7-497e-8fad-5f311abfb351)
+
